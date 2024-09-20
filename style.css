@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/625/582/non_2x/cute-yellow-mouse-character-background-free-vector.jpg');
+    background-position: center ;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.mainCard{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.displayContainer {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.imageContainer {
+    display: grid;
+    place-content: center;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    border-radius: 5px 0px 0px 5px;
+    height: 350px;
+    width: 350px;
+}
+.imageContainer > img{
+    display: none;
+    height: 250px;
+    width: 250px;
+}
+
+.detailsContainer {
+    display: grid;
+    place-content: center;
+    background-color: #3f3f3f;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    height: 350px;
+    width: 350px;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #358dff;
+    color: #fff;
+    border: 0px solid transparent;
+    padding: .5rem 0.5rem;
+    border-radius: 5px;
+}
+
+.inputContainer{
+    display: flex;
+    gap: 10px;
+}
+#pokemonName{
+    outline: none;
+    font-size: inherit;
+}
+
+
+@media(max-width:426px){
+    body{
+        background-position: center right;
+    }
+    .displayContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

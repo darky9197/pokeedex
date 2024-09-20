@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Testing Fetch</title>
+    </head>
+    <body>
+        <div class="mainCard">
+            <h1>Pokedex</h1>
+            <div class="displayContainer">
+                <div class="imageContainer">
+                    <img src="" alt="Pokemon_image" id="pokemonSprite">
+                </div>
+                <div class="detailsContainer">
+                    <p id="pokemonDetails"></p>
+                </div>
+            </div>
+
+            <div class="inputContainer">
+                <input type="text" id="pokemonName">
+                <button class="btn" onclick="fetchdata()">Fetch Data</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
